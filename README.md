@@ -1,2 +1,2 @@
 # DezzerColaborativo
-Creacion de un lading page colaborativo
+Creacion de un lading page colaborativos
