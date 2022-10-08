@@ -83,9 +83,15 @@ header{
     background: linear-gradient(53.13deg,#dc4c11 10.71%,#feab2e);
 }
 
+.blue_card{
+  background: linear-gradient(69.06deg,#b84fdd -26.76%,#4965f4 44.6%,#2efb74 132.54%);
+}
+
 .plan_card h2{
     margin: 0 0 18px;
     font-size: 38px;
+    line-height: 45px;
+    max-width: 300px;
 }
 
 .button_card{
