@@ -1,4 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root{
+    --body-color:#121216;
+    --title-font:'Questrial', sans-serif;
+    --body-font:'Roboto', sans-serif;
+}
+
 *{
-  margin: 0; padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--body-color);
+    color: white;
+    font-family: var(--body-font);
+}
+
+h1, h2{
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+h1{
+    font-size: 42px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    padding: 40px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: 48px 0;
+}
+
+.container_cards{
+    margin: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.plan_description{
+    font-size: 16px;
+    font-weight:normal
+}
+
+.logo_deezer{
+    height: 24px;
+    width: 117px;
+}
+
+.plan_card{
+    max-width: 600px;
+    width: 100%;
+    padding: 24px 80px 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.purple_card{
+    background: linear-gradient(57.8deg,#6b42b4 9.75%,#943aab 95.44%);
+}
+
+.yellow_card{
+    background: linear-gradient(53.13deg,#dc4c11 10.71%,#feab2e);
+}
+
+.plan_card h2{
+    margin: 0 0 18px;
+    font-size: 38px;
+}
+
+.button_card{
+    background-color: var(--body-color);
+    filter: drop-shadow(0 10px 16px rgba(0,0,0,.3)) drop-shadow(0 16px 32px rgba(0,0,0,.1));
+    border-radius: 400px;
+    padding: 8px 20px;
+    margin:24px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    width: 338px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_information{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.time_card{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.price_card{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.link{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.logo_tigo{
+    width: 25px;
+    margin-top: 24px;
+}
+
+.socio_card{
+    background: linear-gradient(180deg,#202122,#3a3b47 55.56%);
+}
+
+.socio_card .button_card{
+    margin-bottom: 0;
 }
