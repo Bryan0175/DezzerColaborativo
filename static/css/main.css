@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 :root{
     --body-color:#121216;
     --title-font:'Questrial', sans-serif;
     --body-font:'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family:Mabry;
+  src: url(../MabryPro.otf);
 }
 
 *{
@@ -20,8 +24,9 @@ body{
 }
 
 h1, h2{
-    font-family: var(--title-font);
+    font-family: Mabry;
     text-align: center;
+    font-weight: 400;
 }
 
 h1{
