@@ -23,13 +23,14 @@ body{
     font-family: var(--body-font);
 }
 
-h1, h2{
+.container_cards h1, .container_cards h2{
     font-family: Mabry;
     text-align: center;
     font-weight: 400;
 }
 
 h1{
+    text-align: center;
     font-size: 42px;
 }
 
@@ -52,15 +53,26 @@ nav{
 nav::before{
   content: "";  
   inset: 0;
-  width: 72%;
-  height: 55vh;
+  width: 80%;
+  height: 45vh;
   background: linear-gradient(126.05deg,rgb(241 42 42/90%) 25.95%,#bf1ceb 44.46%,#06ad57 65.35%,rgb(6 173 87/60%) 76.7%);;
   border-radius:100%;
-  filter: blur(90px) opacity(.35);
+  filter: blur(90px) opacity(.60);
   margin: 0 auto;
-  top: 50px;
+  top: 20px;
   z-index: -10;
   position: absolute;
+}
+
+header{
+  position: relative;
+}
+
+header .bx-menu{
+  font-size: 40px;
+  position: absolute;
+  bottom: 55%;
+  right: 20px;
 }
 
 .socio_tigo img{
@@ -74,7 +86,7 @@ nav::before{
 
 .socio_tigo{
   padding:20px 30px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   border: 1px solid rgb(82 82 93);
@@ -91,24 +103,25 @@ nav::before{
   border: 1px solid rgb(255, 255, 255);
   border-radius: 100px;
   font-weight: bold;
-  display: flex;
+  display: none;
   align-items: center;
 }
 
 .title{
-    margin: 48px 0;
+    margin:-40px 0 0;
+    font-size: 24px;
 }
 
 .container_cards{
-    margin: 48px 0;
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 25px;
+    row-gap: 0px;
 }
 
 .plan_description{
-    font-size: 16px;
+    font-size: 14px;
     font-weight:normal
 }
 
@@ -116,7 +129,7 @@ nav::before{
     height: 24px;
     width: 117px;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     top: 0;
     right: 0;
     bottom: 0;
@@ -124,9 +137,9 @@ nav::before{
 }
 
 .plan_card{
-    max-width: 600px;
+    max-width: 343px;
     width: 100%;
-    padding: 24px 80px 16px;
+    padding: 16px 16px 8px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -147,12 +160,12 @@ nav::before{
 
 .blue_card{
   background: linear-gradient(69.06deg,#b84fdd -26.76%,#4965f4 44.6%,#2efb74 132.54%);
+  margin-bottom: 15px;
 }
 
 .plan_card h2{
-    margin: 0 0 18px;
-    font-size: 38px;
-    line-height: 45px;
+    margin: 0 0 12px;
+    font-size: 24px;
     max-width: 300px;
 }
 
@@ -161,12 +174,12 @@ nav::before{
     filter: drop-shadow(0 10px 16px rgba(0,0,0,.3)) drop-shadow(0 16px 32px rgba(0,0,0,.1));
     border-radius: 400px;
     padding: 8px 20px;
-    margin:24px 0;
+    margin:14px 0;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    width: 338px;
-    height: 54px;
+    width: 283px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,6 +205,10 @@ nav::before{
     margin-bottom: 24px;
 }
 
+.info{
+  font-size: 12px;
+}
+
 .link{
     text-decoration: underline;
     opacity: 0.7;
@@ -214,13 +231,15 @@ nav::before{
 .dropdown{
   display: flex;
   flex-direction: row;
-  max-width: 600px;
+  margin: 0 auto 15px;
+  max-width: 343px;
   width: 100%;
   border: 1px solid rgb(146 146 157);
   border-radius: 100px;
   justify-content: center;
   position: relative;
-  padding: 9px 60px;
+  font-size: 14px;
+  padding: 9px 40px;
   font-weight: bold;
 }
 
@@ -243,6 +262,9 @@ nav::before{
   font-family: Mabry;
 }
 
+.time_card{
+  font-size: 24px;
+}
 
 .card_one, .card_two{
   display: none;
@@ -262,4 +284,82 @@ nav::before{
 
 input[type=radio]{
   display: none;
+}
+
+@media (min-width:768px){
+  .login_button{
+    display: flex;
+  }
+
+  header .bx-menu{
+    display: none;
+  }
+
+  nav::before{
+    width: 72%;
+    height: 55vh;
+    filter: blur(90px) opacity(.35);
+    top: 50px;
+  }
+
+  .logo_deezer{
+    margin:auto;
+  }
+
+  .plan_card{
+    max-width: 600px;
+    padding: 24px 80px 16px;
+    font-size: 16px;
+  }
+
+  .container_cards{
+    margin: 48px 0;
+    row-gap: 25px;
+  }
+
+  .button_card{
+    width: 338px;
+    height: 54px;
+    margin:24px 0;
+  }
+
+  .plan_card h2{
+    font-size: 38px;
+    margin: 0 0 18px;
+    line-height: 45px;
+  }
+
+  .plan_description{
+    font-size: 16px;
+  }
+
+  .blue_card{
+    margin-bottom: 0;
+  }
+
+  .dropdown{
+    max-width: 600px;
+    font-size: 16px;
+    margin: auto;
+    padding: 9px 60px;
+  }
+
+  .time_card{
+    font-size: 32px;
+  }
+
+  .title{
+    margin: 48px 0;
+    font-size: 42px;
+  }
+
+  .info{
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1160px) {
+  .socio_tigo{
+    display: flex;
+  }
 }
