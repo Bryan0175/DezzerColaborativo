@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/Mabry-Pro-Medium.ttf') format('truetype');
+  font-family: 'deezer';
+  src: url('../fonts/deezer-regular.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -12,6 +12,7 @@
   --color-black-color: #000;
   --color-white-color: #fff;
   --color-gray-color: #92929d;
+  --font-deezer-font: deezer;
 }
 
 /* =============== Layout =============== */
@@ -31,7 +32,7 @@ body{
 
 ::-webkit-scrollbar
 {
-  width: 10px;
+   width: 12px;
    padding: 0 10px;
 }
 ::-webkit-scrollbar-track
@@ -40,11 +41,10 @@ body{
   background-color: #1D1D26;
     border: 1px solid #32323D;
 }
-
 ::-webkit-scrollbar-thumb
 {
   background-color: #52525D;
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 /* =============== FAQ ===============*/
@@ -53,12 +53,8 @@ a {
   color: var(--color-white-color);
 }
 
-.faq-section{
-  /* background: var(--color-bg-color); */
-}
-
 .faq-titulo{
-  font-family: Open Sans;
+  font-family: var(--font-deezer-font);
   font-size: 2.5rem;
   text-transform: uppercase;
   color: var(--color-white-color);
@@ -74,7 +70,7 @@ a {
   grid-template-columns: 1fr auto;
   margin-left: 24.7%;
   color: #fff;
-  font-family: Open Sans;
+  font-family: var(--font-deezer-font);
   cursor: pointer;
   padding: 18px;
   width: 49.1%;
@@ -84,11 +80,6 @@ a {
   font-size: 1.8rem;
   font-weight: 700;
   transition: 0.4s;
-}
-
-.faq-section .faq-accordion .signos{
-  font-family: sans-serif;
-  color: red;
 }
 
 .faq-panel {
@@ -116,7 +107,7 @@ a {
 }
 
 .faq-section .faq-bottom{
-  font-family: Open Sans;
+  font-family: var(--font-deezer-font);
   color: var(--color-gray-color);
   margin-top: 9.8rem; margin-bottom: 9rem;
   margin-left: 21rem; 
@@ -129,7 +120,7 @@ a {
 
 /* =============== FOTER ===============*/
 
-a{
+  a{
     text-decoration: none;
   }
 
@@ -141,27 +132,24 @@ a{
   }
 
   .faq-grid{
-    display: grid;
-    grid-template-columns: 1fr;
     color: #fff;
   }
 
-  .faq-descargas{
-    display: grid;
-    grid-template-columns: 1fr;
+  .faq-descargas{  
     justify-items: center;
+    justify-content: center;
     margin-top: 1.15rem;
   }
 
-  .faq-descargas-apple{
-    display: flex;
-    position: absolute;
-    margin-right: 11.2rem;
-  }
-
-  .faq-descargas-googleplay{
-    display: flex;
-    margin-left: 8rem; margin-top: -11px;
+  .faq-descargas-list{
+    margin-left: calc(50% - 10rem);
+    width: 31.5%;
+    display: grid;
+    gap: 7px;
+    grid-template-rows: 3rem;
+    grid-template-columns: repeat(2, 150px 150px);
+    align-items: center;
+    justify-items: center;
   }
 
   .faq-lista{
@@ -218,16 +206,13 @@ a{
     justify-content: initial;
     align-items: center;
     column-gap: 9px;
+    font-size: 21px;
   }
 
   .faq-bloque-redes ul li{
     list-style: none;
     margin-left: 17px;
 
-  }
-
-  .faq-bloque-redes .fa-instagram, .fa-facebook, .fa-twitter, .fa-youtube-play{
-    font-size: 20.5px;
   }
 
   .faq-img-deezer{
@@ -241,13 +226,21 @@ a{
     font-family: sans-serif;
   }
 
-  .faq-idioma span{
+  .faq-idioma label{
     color: #818181; 
     font-size: 14px;
   }
 
-  .faq-idioma a{
+  .faq-idioma #cars{
     font-size: 14px; 
     margin: 0 0 0 -10px; 
     color: #d3d3d3;
+    border: 0px; 
+    cursor:pointer; 
+    background: transparent;
+  }
+
+  .faq-idioma option{
+    color: #000;
+    font-size: 11px;
   }
