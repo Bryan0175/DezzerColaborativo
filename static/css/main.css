@@ -547,8 +547,16 @@ input[type=radio]{
 
 /* =============== FAQ ===============*/
 
+
+
 a {
   color: var(--color-white-color);
+}
+
+.faq-container{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50%;
 }
 
 .faq-titulo{
@@ -559,61 +567,66 @@ a {
   text-align: center;
   line-height: 1.1;
   margin-top: 4.5rem; margin-bottom: 2.2rem;
-  margin-left: -13px;
 }
 
-.faq-accordion {
+.accordion {
+  background-color: #eee;
   background: transparent;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  margin-left: 24.7%;
-  color: #fff;
   font-family: var(--font-deezer-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-white-color);
   cursor: pointer;
   padding: 18px;
-  width: 49.1%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.8rem;
-  font-weight: 700;
   transition: 0.4s;
 }
 
-.faq-panel {
-  margin-left: 20.8rem;
-  width: 590px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.accordion:after {
+  content: '\002B';
+  color: var(--color-white-color);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
   color: var(--color-white-color);
 }
 
-.faq-section .faq-panel p {
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  color: var(--color-white-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 25px; 
-  
 }
 
-.faq-section .faq-panel p:nth-child(2){
+.panel p:nth-child(2){
   margin-top: 13px;
 }
 
-.faq-section .faq-panel p:nth-child(3){
+.panel p:nth-child(3){
   margin-bottom: 13px;
 }
 
-.faq-section .faq-bottom{
+.faq-bottom{
   font-family: var(--font-deezer-font);
   color: var(--color-gray-color);
-  margin-top: 9.8rem; margin-bottom: 9rem;
-  margin-left: 21rem; 
+  margin-top: 9.8rem; margin-bottom: 2rem;
   font-size: 12px;
   line-height: 25px;
-  width: 600px;
-  display: flex;
-  position: relative;
 }
 
 /* =============== FOTER ===============*/
