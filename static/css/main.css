@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family:Mabry;
-  src: url(../MabryPro-Regular.ttf);
+  font-family:deezer;
+  src: url(../deezer-regular.ttf);
 }
 
 *{
@@ -24,17 +24,12 @@ body{
 }
 
 .container_cards h1, .container_cards h2{
-    font-family: Mabry;
+    font-family: deezer;
     text-align: center;
     font-weight: 400;
 }
 
-h1{
-    text-align: center;
-    font-size: 42px;
-}
-
-a{
+nav a, .container_cards a{
     text-decoration: none;
     color: white;
 }
@@ -107,9 +102,11 @@ header .bx-menu{
   align-items: center;
 }
 
-.title{
+.title_section_one{
     margin:-40px 0 0;
     font-size: 24px;
+    text-align: center;
+    font-family: deezer;
 }
 
 .container_cards{
@@ -259,7 +256,7 @@ header .bx-menu{
 }
 
 .mabry{
-  font-family: Mabry;
+  font-family: deezer;
 }
 
 .time_card{
@@ -348,7 +345,7 @@ input[type=radio]{
     font-size: 32px;
   }
 
-  .title{
+  .title_section_one{
     margin: 48px 0;
     font-size: 42px;
   }
